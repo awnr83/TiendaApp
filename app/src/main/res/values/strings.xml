@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">TiendaApp</string>
+
+    <string name="desc_Btn_fab">Crear una tienda</string>
+    <string name="cd_photo">Foto</string>
+
+    <string name="btn_btnGuardar">Guardar</string>
+
+    <string name="et_nombre">Ingrese el nombre de la tienda</string>
+
+    <string name="helper_requerido">Requerido</string>
+
+    <string name="hint_nombre">Nombre de la tienda</string>
+    <string name="hint_phone">Telefono</string>
+    <string name="hint_direccion">Direccion</string>
+    <string name="hint_web">url del sitio web</string>
+    <string name="hint_Img">direccion web de la imagen</string>
+    <string name="fragment_name">Tienda: Alta</string>
+    <string name="msgGuardado">Guardado correctamente</string>
+    <string name="keyArgs">idTienda</string>
+    <string name="fragment_name_edit">Tienda: Modificar</string>
+    <string name="msgModificado">Tienda modificada</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_cardV">200dp</dimen>
+    <dimen name="item_img">150dp</dimen>
+    <dimen name="min">8dp</dimen>
+    <dimen name="med">16dp</dimen>
+    <dimen name="phono_min">88dp</dimen>
+
+</resources>
