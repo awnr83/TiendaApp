@@ -48,11 +48,11 @@ class TiendaAdapter(private var tiendas: MutableList<Tienda>,
                 tvName.text = tienda.nombre
                 cbFav.isChecked = tienda.favorita
 
-                Glide.with(mContext)
+                Glide.with(mBinding.root)
                     .load(tienda.imagen)
                     .diskCacheStrategy(DiskCacheStrategy.ALL)
-                    .circleCrop()
                     .centerCrop()
+                    .circleCrop()
                     .into(imgLogo)
             }
         }

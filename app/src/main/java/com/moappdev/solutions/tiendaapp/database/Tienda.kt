@@ -10,6 +10,19 @@ data class Tienda(
     var nombre:String,
     var direccion:String="",
     var telefono: String="",
-    var web:String,
+    var web:String="",
     var imagen:String,
-    var favorita:Boolean=false)
+    var favorita:Boolean=false){
+
+    //se obtiene con Alt + Ins para comprobacion solo por ID
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (javaClass != other?.javaClass) return false
+        other as Tienda
+        if (id != other.id) return false
+        return true
+    }
+    override fun hashCode(): Int {
+        return id.hashCode()
+    }
+}

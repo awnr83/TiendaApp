@@ -6,7 +6,7 @@ import com.moappdev.solutions.tiendaapp.database.Tienda
 @Dao
 interface TiendaDao {
 
-    @Query("select * from TiendaEntity order by favorita desc")
+    @Query("select * from TiendaEntity order by favorita  desc")
     fun allTiendas(): MutableList<Tienda>
 
     @Query("select * from TiendaEntity where id= :tiendaId")

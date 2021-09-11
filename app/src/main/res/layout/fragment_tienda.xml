@@ -40,7 +40,6 @@
             android:hint="@string/hint_phone"
             android:layout_marginTop="@dimen/med"
             app:endIconMode="clear_text"
-            app:helperText="@string/helper_requerido"
             app:startIconDrawable="@drawable/ic_phone"
             app:counterMaxLength="@integer/max_etPhone"
             app:counterEnabled="true"
@@ -59,7 +58,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/med"
             android:hint="@string/hint_direccion"
-            app:helperText="@string/helper_requerido"
             app:endIconMode="clear_text"
             app:counterMaxLength="@integer/max_etDireccion"
             app:counterEnabled="true"
@@ -80,7 +78,6 @@
             android:layout_marginTop="@dimen/med"
             android:hint="@string/hint_web"
             app:endIconMode="clear_text"
-            app:helperText="@string/helper_requerido"
             app:startIconDrawable="@drawable/ic_web"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
             <com.google.android.material.textfield.TextInputEditText
