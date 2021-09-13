@@ -12,4 +12,9 @@
     <color name="red_li">#E4A39F</color>
     <color name="red_dr">#FF1100</color>
     <color name="color_link">#303F9F</color>
+
+    <color name="primaryColor">#e91e63</color>
+    <color name="primaryDarkColor">#b0003a</color>
+    <color name="secondaryColor">#ff3d00</color>
+    <color name="secondaryDarkColor">#c30000</color>
 </resources>

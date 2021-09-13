@@ -104,6 +104,7 @@
                 android:layout_weight="1"
                 android:layout_marginTop="@dimen/med"
                 android:hint="@string/hint_Img"
+                app:helperText="@string/helper_requerido"
                 app:endIconMode="clear_text"
                 app:startIconDrawable="@drawable/ic_web"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">

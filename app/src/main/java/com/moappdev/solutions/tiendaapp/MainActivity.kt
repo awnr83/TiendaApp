@@ -47,7 +47,8 @@ class MainActivity : AppCompatActivity(), OnClickListener, MainAux {
     }
     private fun setupRecyclerView() {
         mAdapter= TiendaAdapter(mutableListOf(), this)
-        mGridLayoutManager= GridLayoutManager(this, 2)
+
+        mGridLayoutManager= GridLayoutManager(this, resources.getInteger(R.integer.dimen_recyclerView))
         getTiendas()
         mBinding.recyclerView.apply {
             setHasFixedSize(true)
@@ -81,7 +82,7 @@ class MainActivity : AppCompatActivity(), OnClickListener, MainAux {
         }
     }
     override fun onDelete(tienda: Tienda) {
-        val opciones=arrayOf("Eliminar", "Llamar", "Ir al sitio web")
+        val opciones= resources.getStringArray(R.array.dialog_options)
         MaterialAlertDialogBuilder(this)
             .setTitle(R.string.ad_title )
             .setItems(opciones, DialogInterface.OnClickListener { dialog, which ->
@@ -114,10 +115,7 @@ class MainActivity : AppCompatActivity(), OnClickListener, MainAux {
                action = Intent.ACTION_DIAL
                data = Uri.parse("tel:$telefono")
            }
-           if (i.resolveActivity(packageManager) != null)
-               startActivity(i)
-           else
-               Toast.makeText(this, getString(R.string.msgResolve), Toast.LENGTH_SHORT).show()
+           dialogIntet(i)
        }
     }
     private fun dialogWeb(url: String){
@@ -128,11 +126,14 @@ class MainActivity : AppCompatActivity(), OnClickListener, MainAux {
                 action = Intent.ACTION_VIEW
                 data = Uri.parse(url)
             }
-            if(i.resolveActivity(packageManager)!=null)
-                startActivity(i)
-            else
-                Toast.makeText(this, getString(R.string.msgResolve), Toast.LENGTH_SHORT).show()
+            dialogIntet(i)
         }
+    }
+    private fun dialogIntet(i:Intent){
+        if(i.resolveActivity(packageManager)!=null)
+            startActivity(i)
+        else
+            Toast.makeText(this, getString(R.string.msgResolve), Toast.LENGTH_SHORT).show()
     }
 //--------------MainAux---------------
 

@@ -21,8 +21,13 @@
     <string name="fragment_name_edit">Tienda: Modificar</string>
     <string name="msgModificado">Tienda modificada</string>
     <string name="msgDatos">Debe ingresar los datos faltantes</string>
+
     <string name="ad_title">Elija una opción</string>
     <string name="ad_eliminar_ok">Eliminar</string>
     <string name="ad_eliminar_no">Cancelar</string>
+    <string name="ad_options_eliminar">Eliminar</string>
+    <string name="ad_options_llamar">Llamar</string>
+    <string name="ad_options_web">Ir al sitio web</string>
+
     <string name="msgResolve">No se puede realizar  la acción solicitada</string>
 </resources>

@@ -8,4 +8,5 @@
     <integer name="max_etimg">4</integer>
     <integer name="min_etImg">1</integer>
     <integer name="max_etImg">4</integer>
+    <integer name="dimen_recyclerView">2</integer>
 </resources>
